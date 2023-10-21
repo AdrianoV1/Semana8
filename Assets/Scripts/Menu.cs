@@ -7,6 +7,6 @@ public class Menu : MonoBehaviour
 {
     public void SceneGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Juego");
     }
 }
