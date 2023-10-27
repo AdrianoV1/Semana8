@@ -18,7 +18,6 @@ public class Coin : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    // Update is called once per frame
     void Update()
     {
         rb.velocity = -1 * speed * Vector3.forward;
@@ -28,7 +27,7 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            CoinManager coinManager = FindObjectOfType<CoinManager>();
+            Timer coinManager = FindObjectOfType<Timer>();
             coinManager.CollectCoin();
             Destroy(gameObject);
         }
